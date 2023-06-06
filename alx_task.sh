@@ -77,7 +77,7 @@ fi
 # Process command line options
 shift
 
-while getopts ":s:c" opt; do
+while getopts ":s:c:" opt; do
 	case $opt in
 		s)
 			commit_msg=$OPTARG
