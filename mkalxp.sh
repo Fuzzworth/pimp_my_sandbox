@@ -37,10 +37,11 @@ echo "" >> "$readme_file"
 echo "This project is licensed under the [License Name] - see the [LICENSE.md](LICENSE.md) file for details." >> "$readme_file"
 
 # Create the .gitignore file
-echo "# .gitignore" > .gitignore
-echo "" >> .gitignore
-echo "# Ignore compiled files or local configuration specific to your development environment" >> .gitignore
-echo ".venv/" >> .gitignore
-echo "*.pyc" >> .gitignore
+gitignore_file="$directory_name/.gitignore"
+echo "# .gitignore" > "$gitignore_file"
+echo "" >> "$gitignore_file"
+echo "# Ignore compiled files or local configuration specific to your development environment" >> "$gitignore_file"
+echo ".venv/" >> "$gitignore_file"
+echo "*.pyc" >> "$gitignore_file"
 
 echo "Directory '$directory_name', .gitignore and README.md file have been created successfully."
