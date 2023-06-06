@@ -77,9 +77,9 @@ fi
 # Process command line options
 shift
 
-while getopts ":m:ca" opt; do
+while getopts ":s:c" opt; do
 	case $opt in
-		m)
+		s)
 			commit_msg=$OPTARG
 			perform_git_operations "$file_name" "$commit_msg"
 			exit 0
